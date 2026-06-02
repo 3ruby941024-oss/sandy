@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>個人介紹</title>
+<link rel="icon" href="personproject.img/MYSELF.jpg" type="image/jpg" />
+
+<style type="text/css">
+/* ===== 基本排版 ===== */
+.title{
+	margin-top:0px;
+}
+.alignc{
+	text-align:center;
+}
+.alignj{
+	text-align:justify;
+}
+.text{
+	font-size:20px;
+	margin-top:20px;
+}
+.tex-2{
+	font-size:20px;
+	margin-top:20px;
+	padding-left:20%;
+}
+
+
+/* ===== 字型特效 ===== */
+.auto-style4 {
+	color: #DF8017;
+	font-size: 25px;
+}
+.auto-style5 {
+	font-size: 4rem;
+	color: transparent;
+	text-shadow: 0 0 1px #DF8017, 2px 2px 2px #17DFC9;
+}
+.auto-style3:hover {
+	transition:.8s;
+	color:black;
+	text-decoration: none;
+}
+
+/* ===== 輪播圖 ===== */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slide {
+  min-width: 100%;
+  height: auto;
+}
+
+/* ===== 左右箭頭 ===== */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .3s;
+}
+.arrow:hover { background-color: rgba(0,0,0,0.7); }
+.arrow-left { left: 10px; }
+.arrow-right { right: 10px; }
+
+/* ===== 小圓點 ===== */
+.dots { text-align: center; margin-top: 10px; }
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.dot.active { background-color: #DF8017; }
+
+/* ===== 導覽列 ===== */
+.nav-link{
+	color:#fff!important;
+	transition:.8s;
+}
+.nav-link:hover{
+	color:#DF8017!important;
+}
+.navbar{
+	background-color:#17DFC9!important;
+	font-weight:bold;
+	opacity: .8;
+	transition:.8s;
+}
+.navbar:hover{
+	background-color:#fff;
+	opacity: 1;
+	box-shadow:0px 0px 8px #000;
+}
+.myself{
+	width:350px; 
+	display:block;
+	margin:auto;
+}
+#page1{
+	padding-top:60px;
+	margin:20px;
+	padding-bottom:40px;
+}
+#page2{
+	padding-top:60px;
+	margin:20px;
+	padding-bottom:40px;}
+	#page3{
+	padding-top:60px;
+	margin:20px;
+	padding-bottom:40px;}
+
+.a1{
+	color:black;
+	transition:.8s;
+}
+.a1:hover{
+	color:#17DFC9;
+	transition:.8s;
+	text-decoration:none;
+	font-size:40px;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+<!-- ===== 導覽列 ===== -->
+<div class="sss">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light"> 
+	  <a class="navbar-brand" href="#page0" data-id="0">個人介紹</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1">
+	  <span class="navbar-toggler-icon"></span></button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active"><a href="index.htm" class="nav-link">首頁</a></li>
+		  <li class="nav-item active"><a class="nav-link" href="#page01" data-id="01">作品仔細看</a></li>
+		  <li class="nav-item active"><a class="nav-link" href="#page1" data-id="1">關於我</a></li>
+		  <li class="nav-item active"><a class="nav-link" href="#page2" data-id="2">我的經歷</a></li>
+		  <li class="nav-item active"><a class="nav-link" href="#page3" data-id="3">我的作品</a></li>
+		</ul>
+	  </div>
+	</nav>
+</div>
+
+<!-- ===== 輪播圖 ===== -->
+<div class="slider-container" id="page0">
+  <div class="slider" id="slider">
+	<div class="slide"><img src="person.img/p1.jpg" /></div>
+	<div class="slide"><img src="person.img/p2.jpg" /></div>
+	<div class="slide"><img src="person.img/p3.jpg" /></div>
+  </div>
+  <div class="arrow arrow-left" id="prev">&#10094;</div>
+  <div class="arrow arrow-right" id="next">&#10095;</div>
+</div>
+<div class="dots" id="dots"></div>
+
+<!-- ===== PAGE 01：我的經歷 ===== -->
+<section id="page01">
+  <table style="width: 100%">
+    <tr>
+      
+
+      <td style="width:60%" class="tex-2">
+        <div class="title alignj">
+          <div class="auto-style5"><strong>作品仔細看</strong></div>
+          <div class="auto-style4"><strong>please pass</strong></div>
+        </div>
+        <div class="text">
+          老師我在瀏覽器最上方分頁有放icon，因為我在課堂中忘記請您看，我有做很多細節，也很認真花時間去準備，再加上本身也是網頁設計選手，即使不是世界級，我還是要做出我的水準，
+          我只希望作品能被仔細欣賞!
+            </div>
+      </td>
+      
+      <td class="alignc" style="width:40%">
+      <img src="person.img/pass.jpg"  class="myself"/>
+      </td>
+    </tr>
+  </table>
+</section>
+
+
+<!-- ===== PAGE 1：關於我 ===== -->
+<section id="page1">
+  <table style="width: 100%">
+    <tr>
+      <td class="alignc" style="width:50%">
+        <img src="person.img/MYSELF.png" class="myself" />
+      </td>
+
+      <td style="width:50%">
+        <div class="title alignj">
+          <div class="auto-style5"><strong>關於我</strong></div>
+          <div class="auto-style4"><strong>about me</strong></div>
+        </div>
+        <div class="text">
+          姓名：葉軒羽<br />
+          興趣：吃東西、思考下一餐、耍廢<br />
+          擅長技能：把鬧鐘關掉後繼續睡<br />
+          人生目標：消滅世界上所有肉鬆<br />
+          特殊能力：三分鐘跑完八百公尺
+        </div>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- ===== PAGE 2：我的經歷 ===== -->
+<section id="page2">
+  <table style="width: 100%">
+    <tr>
+      
+
+      <td style="width:60%" class="tex-2">
+        <div class="title alignj">
+          <div class="auto-style5"><strong>我的經歷</strong></div>
+          <div class="auto-style4"><strong>my experience</strong></div>
+        </div>
+        <div class="text">
+          112年度全國技藝競賽網頁設計優勝 <br />
+112年度校內第十屆小專題影展第一名<br />
+111年度校內運動會八百公尺破全校紀錄<br />
+111年度擔任扶少團秘書長 <br />
+111年度擔任熱音社美宣長兼KB教<br />
+110年度東南設計獎虛擬角色類佳作        </div>
+      </td>
+      
+      <td class="alignc" style="width:40%">
+      <img src="person.img/s2.jpg" class="myself" />
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- ===== PAGE 3：我的作品 ===== -->
+<section id="page3">
+  <table style="width: 100%">
+    <tr>
+      <td class="alignc" style="width:50%">
+        <img src="person.img/s3.jpg"  class="myself" />
+      </td>
+
+      <td style="width:50%">
+        <div class="title alignj">
+          <div class="auto-style5"><strong>我的作品</strong></div>
+          <div class="auto-style4"><strong>portfolio</strong></div>
+        </div>
+        <div class="text">
+          <a href="https://youtu.be/ENPwOLqKFrE" target="_blank" class="a1">點我觀看</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+</section>
+
+
+
+<!-- ===== JS 輪播 ===== -->
+<script>
+const slider = document.getElementById("slider");
+const slides = document.querySelectorAll(".slide");
+const dotsContainer = document.getElementById("dots");
+let currentIndex = 0;
+
+slides.forEach((_, i) => {
+  const dot = document.createElement("span");
+  dot.classList.add("dot");
+  if (i === 0) dot.classList.add("active");
+  dot.addEventListener("click", () => moveToSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll(".dot");
+
+function moveToSlide(index) {
+  if (index < 0) index = slides.length - 1;
+  if (index >= slides.length) index = 0;
+  currentIndex = index;
+  slider.style.transform = `translateX(${-index * 100}%)`;
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+document.getElementById("next").addEventListener("click", () => moveToSlide(currentIndex + 1));
+document.getElementById("prev").addEventListener("click", () => moveToSlide(currentIndex - 1));
+
+let startX = 0;
+slider.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+slider.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) moveToSlide(currentIndex + 1);
+  if (endX - startX > 50) moveToSlide(currentIndex - 1);
+});
+
+setInterval(() => moveToSlide(currentIndex + 1), 2500);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(function(){
+	$(".sss a").bind("click",function(){
+		var id=$(this).attr("data-id");
+		var top=$("#page"+id).offset().top;
+		var body=(window.opera)?(document.compatMode=="CSS1Compat"?$('html'):$('body')):$('html,body');
+		body.animate({
+			scrollTop:top
+		},800);
+	})
+})
+</script>
+
+
+</body>
+</html>
